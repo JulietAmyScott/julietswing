@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html ng-app="calculator">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/calculator.css">
+		<script type="text/javascript" src="assets/angular.min.js"></script>
+		<script type="text/javascript" src="assets/calculator.js"></script>
+		<title>Honda Racing Calculator</title>
+	</head>
+	<body>
+		<div id="calculator" ng-controller="CalculatorController">
+			<div id="main">
+				<section class="CBR1000">
+					<div>
+						<h4>CBR1000</h4>
+						<p>{{current_year}}</p>
+						<p>{{CBR1000_estimate}}</p>
+					</div>
+				</section>
+				<section class="CBR600">
+					<div>
+						<h4>CBR600</h4>
+						<p>{{current_year}}</p>
+						<p>{{CBR600_estimate}}</p>
+					</div>
+				</section>
+				<section class="CBR500">
+					<div>
+						<h4>CBR500</h4>
+						<p>{{current_year}}</p>
+						<p>{{CBR500_estimate}}</p>
+					</div>
+				</section>
+				<section class="CBR300">
+					<div>
+						<h4>CBR300</h4>
+						<p>{{current_year}}</p>
+						<p>{{CBR300_estimate}}</p>
+					</div>
+				</section>
+				<form action="">
+					<div>
+						<h4>Year</h4>
+						<select ng-change="calculate()" ng-model="current_year" ng-options="o as o for o in year_options">
+						</select>
+					</div>
+					<div>
+						<h4>Milage</h4>
+						<select ng-change="calculate()" ng-model="current_milage" ng-options="o as o for o in milage_options">
+						</select>
+					</div>
+					<div>
+						<h4>Condition</h4>
+						<input type="number" ng-change="calculate()" ng-model="current_rate" value"{{current_rate}}">
+						<p>Pick 3 for Excllent - 2 for Good - 1 for Fair</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

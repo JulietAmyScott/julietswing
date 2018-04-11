@@ -1,0 +1,147 @@
+/* CSS Document */
+* {
+	font-family: 'helvetica';
+}
+@media screen and (max-width:500px) {
+	#calculator {
+		font-size: 15px;
+	}
+	#calculator #main section {
+		background-size: 45px 71px;
+		padding-top: 80px;
+	}
+	#calculator #main h4 {
+		margin: 0;
+		font-size: .75em;
+		letter-spacing: 0;
+	}
+	#calculator #main p {
+		font-size: 1.1em
+	}
+	#calculator #main p + p {
+		font-size: .8em;
+	}
+	#calculator #main p + p::after {
+		display: block;
+		color: #fff;
+	}
+	#calculator #main h4 {
+		font-size: 1.1em;
+		margin: 0;
+	}
+	#calculator #main p {
+		font-size: .8em;
+		line-height: 14px;
+	}
+	#calculator #main br {
+		display: inline;
+		line-height: 14px;
+	}
+	#calculator #main input[type=number] {
+		width: 30px;
+		font-size: .8em;
+	}
+	#calculator #main select {
+		font-size: .8em;
+	}
+}
+
+#calculator { 
+	margin: 0 auto; 
+	padding: 0; 
+	font-size: 16px; 
+	line-height: 24px; 
+	max-width: 800px; 
+	}
+	#calculator #main {
+		background: #444;
+	}
+	#calculator #main:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	#calculator #main section {
+		width: 25%;
+		float: left;
+		text-align: center;
+		padding-top: 110px;
+		color: #fff;
+	}
+	section.CBR1000 {
+		background: #ba2d2d url('images/2014_CBR1000RRABS_145x90.png') center 5px no-repeat;
+	}
+	 section.CBR600 {
+		background: #808080 url('images/2016_CBR600RR_145x90.png') center 5px no-repeat;
+	}
+	 section.CBR500 {
+		background: #ba2d2d url('images/2016_CBR500RABS_145x90.png') center 5px no-repeat;
+	}
+	 section.CBR300 {
+		background: #808080 url('images/2016_CBR300R_145x90.png') center 5px no-repeat;
+	}
+	#calculator #main section > div {
+		padding: 5px 0;
+		background-color: rgba(0,0,0,.15);
+	}
+	#calculator #main  h4 {
+		font-size: 1em;
+		letter-spacing: 1px;
+		margin-bottom: 3px;
+		text-transform: uppercase;
+	}
+	#calculator p {
+		margin: 0;
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+	#calculator p + p {
+		font-size: 1em;
+		font-weight: 300;
+	}
+	#calculator #main p + p::before {
+		content: '$'
+	}
+	#calculator form {
+		background-color: #000;
+		margin:0;
+		padding:10px 0;
+	}
+	#calculator form br {
+		display: none;
+	}
+	#calculator form > div {
+		color:#fff;
+		width: 33%;
+		float: left;
+		text-align: center;
+	    padding: 0 0 5px 0;
+	    margin-top: 20px;
+	}
+	#calculator form::after {
+		content: '';
+		display: block;
+		clear:both;
+	}
+	#calculator form h4 {
+		color: #aaa;
+		margin: 0 0 -5px 0;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+	#calculator form p {
+		color: #888;
+		margin: 0 0 6px 0;
+		font-size: .8em;
+	}
+	#calculator form input[type=number] {
+		width: 70px;
+		text-align: left;
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
+	#calculator form select {
+		font-size: 1em;
+		background-size: 30px 20px;
+		padding: 3px 30px 3px 5px;
+	}

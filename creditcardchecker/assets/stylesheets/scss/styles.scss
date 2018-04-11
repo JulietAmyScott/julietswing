@@ -1,0 +1,83 @@
+
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('../../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') 
+	  format('embedded-opentype'), url('../../fonts/bootstrap/glyphicons-halflings-regular.woff') 
+	  format('woff'), url('../../fonts/bootstrap/glyphicons-halflings-regular.ttf') 
+	  format('truetype'), url('../../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') 
+	  format('svg');
+	}
+.centered {
+	width: 500px;
+    margin: 50px auto 0 auto;
+    border-radius: 7px;
+}
+.box {
+	background: #888;
+	padding: 50px 0;
+	border-radius: 7px;
+}
+#creditCard {
+	width: 350px;
+	height: 200px;
+	background: #000;
+	border-radius: 7px;
+	margin: 0 auto 20px auto;
+}
+.circle img{
+	padding:15px 20px 0 0;
+	float:right;
+}
+form {
+	text-align:center;
+	padding-bottom: 20px;
+}
+input {
+	border:none;
+	height:30px;
+	margin-bottom:5px;
+	padding-left:5px;
+	overflow: hidden;
+}
+input[name=name], [name=cc-number]{
+	width:70%;
+}
+input[name="expMonth"]{
+	width:50px;
+}
+input[name="expYear"]{
+	width:70px;
+}
+#expYear {
+		overflow: hidden;
+}
+input[type="button"] {
+	border: none;
+	width:222px;
+	background: $body-bg;
+	position: relative;
+    top: -1px;
+    left: 1px;
+    &:hover {
+		color: #888;
+    }
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textield;
+}
+
+p {
+ position: absolute;
+ width: 100%;
+ text-align: center;
+color: $body-bg;
+}
+
+
